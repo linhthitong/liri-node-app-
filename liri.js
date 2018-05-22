@@ -19,22 +19,15 @@ console.log(process.argv);
 var spotifySong = grab('spotify-this-song'); 
 // if this run spotify function
 
-// spotify
-//   .request('https://api.spotify.com/v1/tracks/7yCPwWs66K8Ba5lFuU2bcx')
-//   .then(function(data) {
-//     console.log(data); 
-//   })
-//   .catch(function(err) {
-//     console.error('Error occurred: ' + err); 
-//   });
 
 spotify
-  .search({ type: 'track', query: 'Moves like Jagger' })
+  .search({ type: 'track', query: 'Hello by Adele' })
   .then(function(response) {
     console.log("34")
     console.log(response.tracks.items[0].artists[0].name);
     console.log(response.tracks.items[0].name);
-    // console.log(response);
+    console.log(response.tracks.items[0].preview_url);
+    console.log(response.tracks.items[0].album.name);
   })
   .catch(function(err) {
     console.log(err);
