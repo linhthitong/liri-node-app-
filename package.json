@@ -20,6 +20,8 @@
   "dependencies": {
     "dotenv": "^5.0.1",
     "node-spotify-api": "^1.0.7",
+    "omdb-client": "^2.0.0",
+    "request": "^2.87.0",
     "twit": "^2.2.9",
     "twitter": "^1.7.1"
   }
